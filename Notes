@@ -1,3 +1,9 @@
 Machine learning 
 This repo is for all the notes and the exercises and the projects of the Udemy Course 
 Link: https://www.udemy.com/course/complete-machine-learning-nlp-bootcamp-mlops-deployment/
+
+Course Material
+1-> https://github.com/krishnaik06/Complete-Python-Bootcamp
+2-> https://github.com/krishnaik06/Complete-Data-Science-With-Machine-Learning-And-NLP-2024
+conda create -p venv python=3.10   => used to create a virtual env
+conda activate venv/  => used to activaste the venv
