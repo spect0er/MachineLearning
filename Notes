@@ -7,4 +7,4 @@ Course Material
 2-> https://github.com/krishnaik06/Complete-Data-Science-With-Machine-Learning-And-NLP-2024
 conda create -p venv python=3.10   => used to create a virtual env
 conda activate venv/  => used to activaste the venv
-in python we write else statements after for loop, it's runs only when the for loop is finished normalyy withjour any break
+in python we write else statements after for loop, it runs only when the for loop is finished normalyy without any breaky
