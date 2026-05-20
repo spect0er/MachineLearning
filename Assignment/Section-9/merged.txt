@@ -1,0 +1,7 @@
+this is when file where when changes are going to be made when when when when
+when when this is the first line
+this is the second linewe have to return the number
+of lines
+number of words
+number of characters
+in this file

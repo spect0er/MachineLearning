@@ -1,0 +1,6 @@
+we 
+have 
+to reverse
+these
+lines
+and print it
