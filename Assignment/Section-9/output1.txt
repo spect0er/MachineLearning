@@ -1,0 +1,99 @@
+import { useState } from "react";
+
+const NAV_LINKS = ["Freelancers", "Creators", "Pricing"];
+
+const VALUE_PROPS = [
+  {
+    icon: "palette",
+    title: "Creators",
+    desc: "Photographers, editors, and digital artists ready to bring your vision to life with precision.",
+    cta: "Browse Creators",
+  },
+  {
+    icon: "code",
+    title: "Freelancers",
+    desc: "Top-tier developers and designers for your next big project or long-term product growth.",
+    cta: "Hire Freelancers",
+  },
+  {
+    icon: "location_on",
+    title: "On-ground",
+    desc: "Local experts for event management, physical production, and regional logistical support.",
+    cta: "Find Local Experts",
+  },
+];
+
+const STATS = [
+  { value: "15K+", label: "Active Users", border: false },
+  { value: "8K+", label: "Projects Delivered", border: true },
+  { value: "4.9", label: "User Rating", border: false, star: true },
+];
+
+const FOOTER_LINKS = ["Privacy Policy", "Terms of Service", "Contact Support"];
+
+export default function App() {
+  const [query, setQuery] = useState("");
+
+  return (
+    <div className="bg-[#f9f9fb] text-[#1a1c1d] antialiased selection:bg-[#d7e2ff] selection:text-[#001b3f]">
+      {/* ── Nav ── */}
+      <nav className="fixed top-0 w-full z-50 bg-[#f9f9fb]/80 backdrop-blur-3xl border-b border-[#c1c6d6]/20">
+        <div className="w-full px-8 lg:px-12 flex justify-between items-center h-16">
+          {/* Logo + links */}
+          <div className="flex items-center gap-8">
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold tracking-tighter text-[#1a1c1d] leading-none">
+                BridgeNow
+              </span>
+              <span className="text-[10px] text-[#0059b5] font-bold uppercase tracking-widest mt-0.5">
+                Where talent meets opportunity
+              </span>
+            </div>
+            <div className="hidden md:flex gap-4">
+              <a
+                href="#"
+                className="text-sm font-bold text-[#0059b5] border-b-2 border-[#0059b5]"
+              >
+                Discover
+              </a>
+              {NAV_LINKS.map((l) => (
+                <a
+                  key={l}
+                  href="#"
+                  className="text-sm font-medium text-[#414753] hover:text-[#0059b5] transition-colors duration-300"
+                >
+                  {l}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Actions */}
+          <div className="flex items-center gap-4">
+            <a
+              href="#"
+              className="hidden md:block text-sm font-medium text-[#414753] hover:text-[#1a1c1d] transition-colors"
+            >
+              Login
+            </a>
+            <button className="bg-[#0071e3] text-white px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:opacity-90">
+              Explore Talent
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <main className="pt-32">
+        {/* ── Hero ── */}
+        <section className="max-w-[980px] mx-auto px-6 text-center mb-20">
+          <div className="inline-flex items-center gap-2 bg-[#f3f3f5] px-4 py-1.5 rounded-full border border-[#c1c6d6]/30 mb-8">
+            <span className="material-symbols-outlined text-[#0059b5] text-[18px]">
+              verified
+            </span>
+            <span className="text-xs font-semibold text-[#414753] tracking-wide">
+              Trusted by 10,000+ creators &amp; brands
+            </span>
+          </div>
+
+          <h1 className="text-5xl md:text-[80px] font-bold tracking-[-0.04em] leading-tight text-[#1a1c1d] mb-8">
+            Find Talent.

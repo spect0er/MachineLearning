@@ -1,0 +1,11 @@
+              </a>
+            ))}
+          </div>
+          <p className="text-xs font-semibold text-[#5f5e60]">
+            © 2024 BridgeNow. India's first talent operating system.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
